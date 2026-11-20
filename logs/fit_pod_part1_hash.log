@@ -1,0 +1,33 @@
+﻿
+  split mode: hash
+    train  152 sims  41 systems  8/8 geometries
+    valid   23 sims  19 systems  8/8 geometries
+    test    24 sims  21 systems  8/8 geometries
+
+  D:\VS_projects\bs8414_KAN_pod_surrogate\pod_basis_part1_hash.pt already fitted on this corpus (9b503ab24588f80b) — re-scoring only
+
+  TC space-time POD  snapshot (181, 16)  rank 149  modes for 90/99/99.9% energy: [13, 102, 143]
+    projection floor, R2 / RMSE degC
+        r                train                valid                 test
+        2      0.8709    53.69      0.8578    58.36      0.8519    55.35
+        4      0.9248    40.97      0.8981    49.39      0.9174    41.34
+        8      0.9530    32.40      0.9355    39.30      0.9474    32.99
+       16      0.9775    22.40      0.9663    28.43      0.9706    24.66
+       32      0.9876    16.64      0.9737    25.12      0.9769    21.87   <- default r
+       64      0.9932    12.34      0.9758    24.09      0.9787    21.01
+      149      0.9999     1.47      0.9773    23.31      0.9797    20.49
+
+  HRR space-time POD  snapshot (181, 5)  rank 149  modes for 90/99/99.9% energy: [52, 112, 141]
+    projection floor, R2 / RMSE kW
+        r                train                valid                 test
+        2      0.9562   165.86      0.9381   200.64      0.9499   174.25
+        4      0.9778   118.01      0.9646   151.69      0.9844    97.38
+        8      0.9896    80.94      0.9848    99.39      0.9905    76.06
+       16      0.9931    65.65      0.9867    92.93      0.9919    70.25   <- default r
+       32      0.9956    52.71      0.9884    86.83      0.9933    63.83
+       64      0.9983    33.03      0.9913    75.38      0.9945    57.78
+      149      1.0000     2.71      0.9941    61.92      0.9966    45.55
+
+  combined valid+test TC R2 ceiling at r=32: 0.9753   (compare with evaluate_part1's combined_tc_r2)
+  written: D:\VS_projects\bs8414_KAN_pod_surrogate\pod_floor_part1_hash.json   (1 s)
+  copied to ..\bs8414_MLP_pod_surrogate\pod_basis_part1_hash.pt

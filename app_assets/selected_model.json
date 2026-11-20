@@ -1,0 +1,14 @@
+{
+ "selected": "models_part1_podattn_hash_s48_r1",
+ "criterion": "the seed base plotted in the paper's Figs 7-12",
+ "n_candidates": 5,
+ "validation_note": "All five seed bases are the paper's model, not competing candidates: their test TC R\u00b2 spans 0.9232-0.9326 (mean 0.9273 \u00b1 0.0045), inside the \u00b10.02 band this project treats as inconclusive. Seed base 48 is the default only because it is the one the paper's figures show.",
+ "test_r2_by_seed_base": {
+  "models_part1_podattn_hash_s42_r1": 0.9233757853507996,
+  "models_part1_podattn_hash_s45_r1": 0.9325623512268066,
+  "models_part1_podattn_hash_s48_r1": 0.925721287727356,
+  "models_r9/kanpod_hash_s51": 0.9314709305763245,
+  "models_r9/kanpod_hash_s54": 0.9232221841812134
+ },
+ "written_by": "set by hand for the paper app (not by ..\\select_best_model.py)"
+}

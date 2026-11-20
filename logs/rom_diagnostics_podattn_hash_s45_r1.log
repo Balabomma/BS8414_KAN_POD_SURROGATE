@@ -1,0 +1,33 @@
+==============================================================================
+  POD-ROM error decomposition — models_part1_podattn_hash_s45_r1
+  spatial head, 3 member(s), split hash, r_tc=8 r_hrr=4
+==============================================================================
+
+  [train] TC  (27511 frames)
+    error share  truncation  24.4%   coefficients  75.6%   (orthogonality residual 2.4e-08)
+    coefficient R2, leading modes:  0.993  0.962  0.887  0.857  0.480  0.391  0.159  0.105
+
+  [train] HRR  (27511 frames)
+    error share  truncation   0.0%   coefficients 100.0%   (orthogonality residual 1.6e-08)
+    coefficient R2, leading modes:  0.975  0.280  0.321  0.122
+    TC R2 (degC)  ROM 0.9585   projection floor 0.9835   gap 0.0250
+
+  [valid] TC  (4163 frames)
+    error share  truncation  17.2%   coefficients  82.8%   (orthogonality residual 2.2e-08)
+    coefficient R2, leading modes:  0.980  0.905  0.764  0.793  0.348  0.318  0.072  0.032
+
+  [valid] HRR  (4163 frames)
+    error share  truncation   0.0%   coefficients 100.0%   (orthogonality residual 1.1e-08)
+    coefficient R2, leading modes:  0.951  0.269  0.252  0.053
+    TC R2 (degC)  ROM 0.9313   projection floor 0.9818   gap 0.0505
+
+  [test] TC  (4344 frames)
+    error share  truncation  17.2%   coefficients  82.8%   (orthogonality residual 2.3e-08)
+    coefficient R2, leading modes:  0.978  0.870  0.701  0.754  0.380  0.307  0.027  0.148
+
+  [test] HRR  (4344 frames)
+    error share  truncation   0.0%   coefficients 100.0%   (orthogonality residual 1.9e-08)
+    coefficient R2, leading modes:  0.949  0.259  0.284  0.062
+    TC R2 (degC)  ROM 0.9325   projection floor 0.9810   gap 0.0484
+
+  written: models_part1_podattn_hash_s45_r1\rom_diagnostics.json

@@ -1,0 +1,19 @@
+# Part1 thermocouple POD-ROM projects — Python dependencies
+# (identical in bs8414_KAN_pod_surrogate and bs8414_MLP_pod_surrogate)
+#
+# Each project's venv MIRRORS ITS PARENT'S EXACT PACKAGE SET, pinned in
+# `requirements_lock_from_parent.txt` (pip freeze of bs8414_KAN_surrogate /
+# bs8414_MLP_surrogate, taken 2026-09-14). That is what the data-parity check in
+# verify_parity_pod.py relies on. Rebuild with:
+#
+#   python -m venv venv ; .\venv\Scripts\activate
+#   pip install -r requirements_lock_from_parent.txt --extra-index-url https://download.pytorch.org/whl/cu121
+#
+# torch 2.5.1+cu121, Python 3.12.9, RTX 4090 (config sets DEVICE = "cuda").
+# What the ROM layer itself needs on top of the parent pipeline:
+
+numpy          # POD by SVD (float64)
+pandas         # FDS csv reading in the shared data loader
+scipy
+scikit-learn   # GP POD-ROM baseline (GaussianProcessRegressor, ARD Matern)
+matplotlib

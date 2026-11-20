@@ -1,0 +1,32 @@
+==============================================================================
+  POD-ROM error decomposition — models_part1_rom_hash_s42_r1  (3 member(s), split hash)
+==============================================================================
+
+  [train] TC  r=32  151 complete cases
+    error share  truncation  55.5%   coefficients  44.5%   (orthogonality residual 9.4e-10)
+    coefficient R2, leading modes:  0.995  0.996  0.991  0.992  0.984  0.966  0.977  0.949
+
+  [train] HRR  r=16  151 complete cases
+    error share  truncation  76.8%   coefficients  23.2%   (orthogonality residual 7.5e-10)
+    coefficient R2, leading modes:  0.985  0.978  0.965  0.952  0.916  0.854  0.797  0.649
+    TC R2 (degC)  ROM 0.9769   projection floor 0.9876   gap 0.0107
+
+  [valid] TC  r=32  23 complete cases
+    error share  truncation  37.8%   coefficients  62.2%   (orthogonality residual 3.0e-09)
+    coefficient R2, leading modes:  0.895  0.940  0.906  0.945  0.689  0.509  0.796  0.021
+
+  [valid] HRR  r=16  23 complete cases
+    error share  truncation  67.0%   coefficients  33.0%   (orthogonality residual 1.3e-09)
+    coefficient R2, leading modes:  0.791  0.717  0.765  0.870  0.794  0.273  0.655 -0.098
+    TC R2 (degC)  ROM 0.9246   projection floor 0.9737   gap 0.0490
+
+  [test] TC  r=32  24 complete cases
+    error share  truncation  30.9%   coefficients  69.1%   (orthogonality residual 1.5e-09)
+    coefficient R2, leading modes:  0.745  0.938  0.907  0.778  0.355 -0.147  0.641  0.627
+
+  [test] HRR  r=16  24 complete cases
+    error share  truncation  63.7%   coefficients  36.3%   (orthogonality residual 2.6e-09)
+    coefficient R2, leading modes:  0.860  0.772  0.716  0.673  0.387 -0.100  0.023  0.037
+    TC R2 (degC)  ROM 0.9176   projection floor 0.9769   gap 0.0593
+
+  written: models_part1_rom_hash_s42_r1\rom_diagnostics.json

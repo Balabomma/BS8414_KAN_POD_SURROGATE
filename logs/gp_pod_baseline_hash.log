@@ -1,0 +1,21 @@
+﻿
+  split mode: hash
+    train  152 sims  41 systems  8/8 geometries
+    valid   23 sims  19 systems  8/8 geometries
+    test    24 sims  21 systems  8/8 geometries
+
+  fitting 32 GPs on TC coefficients (151 cases, 38-d inputs) ...
+
+  fitting 16 GPs on HRR coefficients (151 cases, 38-d inputs) ...
+
+  [train] 152 sims   TC R2 0.9866  RMSE 17.31 degC   HRR R2 0.9932
+    95% coverage TC: GP only 0.377, with truncation 0.948 (half-width 29.5 degC)
+
+  [valid] 23 sims   TC R2 0.8806  RMSE 53.47 degC   HRR R2 0.9397
+    95% coverage TC: GP only 0.671, with truncation 0.905 (half-width 52.4 degC)
+
+  [test] 24 sims   TC R2 0.8642  RMSE 53.00 degC   HRR R2 0.9232
+    95% coverage TC: GP only 0.594, with truncation 0.899 (half-width 47.5 degC)
+
+  combined valid+test TC R2: 0.8724
+  written: models_gp_pod_hash\evaluation_gp.json  (6.9 min)

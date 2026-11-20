@@ -1,0 +1,30 @@
+
+  split mode: hash
+    train  152 sims  41 systems  8/8 geometries
+    valid   23 sims  19 systems  8/8 geometries
+    test    24 sims  21 systems  8/8 geometries
+
+  D:\VS_projects\bs8414_KAN_pod_surrogate\pod_spatial_basis_part1_hash.pt already fitted on this corpus (9b503ab24588f80b) — re-scoring only
+
+  TC spatial POD  rank 16  modes for 90/99/99.9% energy: [3, 9, 14]
+    projection floor, R2 / RMSE degC
+        r                train                valid                 test
+        2      0.8818    51.38      0.8668    56.48      0.8868    48.38
+        4      0.9635    28.53      0.9609    30.59      0.9595    28.93
+        6      0.9755    23.39      0.9737    25.09      0.9723    23.95
+        8      0.9835    19.20      0.9818    20.89      0.9810    19.84   <- default r
+       10      0.9922    13.23      0.9908    14.82      0.9914    13.32
+       12      0.9966     8.69      0.9964     9.23      0.9963     8.80
+       16      1.0000     0.00      1.0000     0.00      1.0000     0.00
+
+  HRR spatial POD  rank 5  modes for 90/99/99.9% energy: [2, 3, 3]
+    projection floor, R2 / RMSE kW
+        r                train                valid                 test
+        1      0.9639   150.71      0.9621   156.94      0.9613   153.17
+        2      0.9797   112.89      0.9768   122.87      0.9804   108.97
+        3      0.9992    22.07      0.9992    23.49      0.9991    23.50
+        4      1.0000     2.53      1.0000     2.67      1.0000     2.62   <- default r
+        5      1.0000     0.00      1.0000     0.00      1.0000     0.00
+
+  combined valid+test TC R2 ceiling at r=8: 0.9814
+  written: D:\VS_projects\bs8414_KAN_pod_surrogate\pod_spatial_floor_part1_hash.json   (1 s)
