@@ -2,9 +2,8 @@
 
 Code, trained weights and a Streamlit app for the surrogate model in:
 
-> S. P. K. Balabomma, B. Matuszewski, E. Asimakopoulou. *A Deep-Learning-Based
-> Surrogate Model for BS 8414 Façade Fire Test Simulations: A Proof-of-Concept
-> Study.* Manuscript for *Engineering with Computers*.
+> S. P. K. Balabomma, B. Matuszewski, E. Asimakopoulou. *Deep Learning Based
+> Surrogate Model for BS 8414 Façade Fire Test.* Manuscript for *Engineering with Computers*.
 
 The model predicts the thermocouple histories that an FDS simulation of a
 BS 8414-1 rig would produce for a given façade build-up, without running the
